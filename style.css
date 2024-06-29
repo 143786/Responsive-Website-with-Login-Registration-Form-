@@ -78,3 +78,119 @@ header {
   cursor: pointer;
   background: #fff;
 }
+
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 720px;
+  width: 100%;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.form-popup .form-box {
+  display: flex;
+}
+
+.form-box .form-details {
+  max-width: 350px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(Images/Tab.02.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  background-position: center;
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-box .form-content {
+  width: 100%;
+  padding: 30px;
+}
+form .input-field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+form .input-field input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  border: 1px solid #717171;
+}
+
+.input-field input:focus {
+  border-color: #096c7a;
+}
+.input-field input:is(:focus, :valid) {
+  padding: 16px 15px 0;
+}
+
+form .input-field label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #717171;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label {
+  font-size: 0.75rem;
+  color: #096c7a;
+
+  transform: translateY(-120%);
+}
+.form-box a {
+  color: #096c7a;
+  text-decoration: none;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
+
+.form-box .forgot-password {
+  display: inline-flex;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+form button {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 0;
+  border-radius: 5px;
+  margin: 25px 0;
+  color: #fff;
+  cursor: pointer;
+  background: #096c7a;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #1e96a6;
+}
+
+.form-box .bottom-link {
+  text-align: center;
+}
