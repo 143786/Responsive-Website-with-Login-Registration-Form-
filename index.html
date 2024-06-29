@@ -14,11 +14,13 @@
     <title>Login & Registration Form</title>
   </head>
   <body>
+    <!--------------------------------Navigation-bar------------------------------>
+
     <header>
       <nav class="navbar">
         <a href="#" class="logo">
           <img src="Images/2.png" alt="logo" />
-          <h2>Malik-Tabish</h2>
+          <h2>MalikTabish</h2>
         </a>
         <ul class="links">
           <li><a href="#">Home</a></li>
@@ -31,6 +33,36 @@
         <button class="login-btn">Log In</button>
       </nav>
     </header>
+    <!--------------------------------Popup Form------------------------------>
+    <div class="form-popup">
+      <div class="form-box">
+        <div class="form-details">
+          <h2>Welcom Back</h2>
+          <p>Please log in using your personla information to stay</p>
+        </div>
+        <div class="form-content">
+          <h2>LogIn</h2>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" />
+              <label>Email</label>
+            </div>
+
+            <div class="input-field">
+              <input type="password" />
+              <label>Password</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button type="submit">Log In</button>
+          </form>
+          <div class="bottom-link">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
