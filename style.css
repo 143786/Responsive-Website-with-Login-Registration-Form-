@@ -43,11 +43,11 @@ header {
 }
 
 .navbar .logo h2 {
-  font-size: 1.7rem;
-  font-weight: 400;
-  /* color: #534311; */
-  color: #931b43;
-  margin-left: -44px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #6d5818;
+  /*color: #931b43; */
+  margin-left: -40px;
 }
 
 .navbar .links {
@@ -89,6 +89,14 @@ header {
   transform: translate(-50%, -50%);
   border: 2px solid #fff;
   border-radius: 5px;
+}
+
+.form-popup .close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #878787;
+  cursor: pointer;
 }
 
 .form-popup .form-box {
